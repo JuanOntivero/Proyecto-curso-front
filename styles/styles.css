@@ -48,12 +48,14 @@ header {
     clear: both;
     content:'';
     display: table;
+
 }
 
 
 .menu {
     width: 950px;
     margin: 0 auto;
+
 }
 
 nav {
@@ -62,7 +64,7 @@ nav {
 
 nav ul li {
     list-style: none;
-    margin-left: 75px;
+    margin-left: 76px;
     padding: 12px 0;
     float: left;
     position: relative;
@@ -89,11 +91,17 @@ nav ul li a:hover::before {
     width: 100%;
 }
 
+.objt1{
+    padding: 15%;
+}
+
+
 .section{
     width: 48%;
     float: left;
     border-color: #bc00ff;
     border-style: solid;
+    padding: 0.5%;
 }
 
 
@@ -102,7 +110,7 @@ nav ul li a:hover::before {
     float: right;
     border-color: #bc00ff;
     border-style: solid;
-
+    padding: 0.5%;
 }
 
 h1{
