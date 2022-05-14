@@ -1,15 +1,117 @@
+*{
+    margin: 0;
+}
 body{
     background-color: #FBAB7E;
     background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    background-image: url(../assets/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-position: 0% -3.5%;
+}
+
+.container-boton{
+    background-color: #ffffff;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 90%;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-boton:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.boton{
+    width: 50px;
+    transition: ease 1s;
+}
+
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(120, 216, 10, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+
+
+header {
+    background: rgb(131,58,180);
+    width: 100%;
+    clear: both;
+    content:'';
+    display: table;
+}
+
+
+.menu {
+    width: 950px;
+    margin: 0 auto;
+}
+
+nav {
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 75px;
+    padding: 12px 0;
+    float: left;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+nav ul li a::before {
+    display: block;
+    content: '';
+    width: 0%;
+    background: rgb(255, 255, 255);
+    height: 5px;
+    top:0;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+.section{
+    width: 48%;
+    float: left;
+    border-color: #bc00ff;
+    border-style: solid;
+}
+
+
+.aside{
+    width: 48%;
+    float: right;
+    border-color: #bc00ff;
+    border-style: solid;
+
 }
 
 h1{
     font-family: 'Raleway', sans-serif;
     background: rgb(131,58,180);
     color: #fff;
-    text-align: center;
     font-size: xxx-large;
     text-decoration: aliceblue;
+    text-align: center;
 }
 
 h2{
@@ -35,4 +137,61 @@ img{
     height: 30%;
 }
 
+.footer{
+    margin: 1;
+    padding: 40px 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    background-image: linear-gradient(to right top, #bc00ff, #8e4eff, #5e69ff, #3079fc, #1284eb);
+    clear: both;
+}
+
+.social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #ffffff;
+}
+
+.social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid rgb(255, 255, 255);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 px;
+    opacity: 0.75;
+}
+
+.social a:hover{
+    opacity: 2;
+}
+
+.list{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-style: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.list a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.list li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.list li:hover{
+    opacity: 3;
+}
 
