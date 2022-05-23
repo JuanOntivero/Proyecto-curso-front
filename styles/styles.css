@@ -203,3 +203,15 @@ img{
     opacity: 3;
 }
 
+.formulario{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 10%;
+    background-color: aqua;
+    padding: 5%;
+}
+
+.ramen:hover{
+    background-color: aqua;
+}
